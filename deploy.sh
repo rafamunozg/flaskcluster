@@ -14,3 +14,5 @@ docker rm -f restapp1
 docker run --name restapp0 --restart=always -p 8080:80 -v $PWD/restapp:/app -d jazzdd/alpine-flask
 docker run --name restapp1 --restart=always -p 8081:80 -v $PWD/restapp:/app -d jazzdd/alpine-flask
 
+echo 'Your instances should now be running on your public IP/hostname ports 8080 and 8081 ...'
+
