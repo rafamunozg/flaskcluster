@@ -11,6 +11,6 @@ docker rm -f restapp1
 # git clone ... 
 
 # Run docker instances with Flask
-docker run --name restapp0 --restart=always -p 8080:80 -v ~/flask-cluster/restapp:/app -d jazzdd/alpine-flask
-docker run --name restapp1 --restart=always -p 8081:80 -v ~/flask-cluster/restapp:/app -d jazzdd/alpine-flask
+docker run --name restapp0 --restart=always -p 8080:80 -v $PWD/restapp:/app -d jazzdd/alpine-flask
+docker run --name restapp1 --restart=always -p 8081:80 -v $PWD/restapp:/app -d jazzdd/alpine-flask
 
